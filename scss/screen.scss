@@ -1,0 +1,22 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
+@import "sections/general";
+@import "layout/header";
+@import "layout/buttons";
+@import "sections/intro";
+@import "sections/_about-fly";
+@import "sections/_features";
+@import "sections/_flying-generation";
+@import "sections/_vision-generation";
+@import "sections/_start-journey";
+@import "layout/footer";
+
+

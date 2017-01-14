@@ -1,0 +1,23 @@
+.main-header {
+  overflow: hidden;
+  padding-top: 55px;
+  margin-bottom: 230px;
+}
+a.logo {
+  display: block;
+  float: left;
+  h1 {
+    text-indent: -9999px;
+  }
+}
+.main-nav {
+  float: right;
+  .menu {
+    display: block;
+    padding: 20px;
+    margin-top: -10px;
+    border: none;
+    background: url("../img/menu.png") 50% 50% no-repeat;
+    text-indent: -9999px;
+  }
+}
