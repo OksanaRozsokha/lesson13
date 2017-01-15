@@ -1,0 +1,27 @@
+.vision-generation {
+  @include section-bg("../img/new-vision-bg.png");
+  background-color: #232323;
+  padding: 45px 0;
+  .container {
+    @include display-flex;
+    @include justify-content(flex-end);
+  }
+  h2 {
+    margin-bottom: 50px;
+    @include big-h2;
+    color: $white;
+  }
+  .general-btn {
+    background: transparent;
+    border: 1px solid #3b3b3b;
+    color: $white;
+    &:hover {
+      background: $white;
+      border: 1px solid transparent;
+      color: $black;
+    }
+  }
+}
+.flex-wrap {
+  max-width: 535px;
+}

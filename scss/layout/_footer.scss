@@ -1,0 +1,25 @@
+.main-footer {
+  @include small-bg("../img/footer-bg.png");
+  background-size: contain;
+  padding: 230px 0;
+  text-align: center;
+  .container {
+    @include display-flex;
+    @include justify-content(center);
+  }
+  .flex-content {
+    max-width: 1055px;
+  }
+  .logo {
+    @include font-bold(24px);
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 35px;
+    color: $grey;
+  }
+}
+.small-link {
+  color: $grey;
+  display: inline;
+}

@@ -1,0 +1,29 @@
+@mixin font-regular($size) {
+  font: {
+    size: $size;
+    family: "Montserrat-Regular", sans-serif;
+  }
+}
+@mixin font-bold($size) {
+  font: {
+    size: $size;
+    family: "Montserrat-Bold", sans-serif;
+  }
+}
+@mixin big-h2 {
+  font: {
+    size: 92px;
+    family: "Montserrat-Regular", sans-serif;
+  }
+}
+@mixin section-bg($background-url) {
+  background: url($background-url) 50% 0 no-repeat;
+  background-size: cover;
+}
+@mixin small-bg($background-url) {
+  background: url($background-url) 50% 50% no-repeat;
+}
+@mixin  rotate($deg) {
+  -webkit-transform: rotate($deg);
+  transform: rotate($deg);
+}

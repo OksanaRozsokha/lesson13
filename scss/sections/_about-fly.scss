@@ -1,0 +1,74 @@
+.about-fly {
+  @include display-flex;
+  //h2 {
+  //  max-width: 335px;
+  //}
+}
+.droid-bg {
+  position: relative;
+  max-width: 615px;
+  background: url("../img/droid-bg.png") 0 50% no-repeat;
+  background-size: cover;
+  padding: 35px 0;
+  @include display-flex;
+  @include justify-content(flex-end);
+  }
+.content-wrap {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  h2 {
+    width: 285px;
+    margin-bottom: 15px;
+  }
+  p {
+    color: $grey;
+  }
+}
+.three-circles {
+  display: inline-block;
+  width: 245px;
+  height: 495px;
+  @include  small-bg("../img/circle-part.png");
+  margin-left: 280px;
+  text-indent: -9999px;
+}
+.road-bg {
+  width: 100%;
+  @include section-bg("../img/road-bg.png");
+  @include display-flex;
+  @include align-items(stretch);
+}
+.title-wrap {
+  padding: 0 110px 0 90px;
+  background: rgba(0, 0, 0, .65);
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  h2 {
+    max-width: 360px;
+    color: $white;
+  }
+}
+.btn-wrap {
+  position: relative;
+  @include display-flex;
+  @include align-items(center);
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 175px;
+    background: $white;
+    position: absolute;
+    bottom: 0;
+    left: 58%;
+  }
+  .general-btn {
+    margin-left: 40px;
+    @include  rotate(90deg);
+  }
+}

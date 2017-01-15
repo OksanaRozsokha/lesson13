@@ -1,3 +1,5 @@
 .intro {
-  background: $blue;
+  height: 100vh;
+  @include section-bg("../img/intro-bg.png");
+  padding-top: 60px;
 }
