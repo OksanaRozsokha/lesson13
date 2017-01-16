@@ -7,7 +7,10 @@
     <title>title</title>
     <!-- Bootstrap -->
     <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/lib/jquery.bxslider.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
     <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 <!-----------------------INTRO-SECTION----------------->
@@ -25,7 +28,7 @@
                         <span class="small-circle">circle</span>
                         <h1>Mars</h1>
                     </a>
-                    <p><span class="phone-icon">phone</span>+48 604 300 500</p>
+                    <p><span class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>+48 604 300 500</p>
                 </div>
                 <div class="flex-right">
                     <button class="buy-btn">
@@ -42,7 +45,13 @@
     <!---------------------END HEADER--------------------------->
 
     <div class="container">
-
+        <!--<div class="slider-wrap" style="width: 300px">-->
+            <!--<ul class="bxslider">-->
+                <!--<li><img src="img/road-bg.png" /></li>-->
+                <!--<li><img src="img/start-journey-bg.png" /></li>-->
+                <!--<li><img src="img/road-bg.png" /></li>-->
+            <!--</ul>-->
+        <!--</div>-->
     </div>
 </section>
 
@@ -80,16 +89,20 @@
     <div class="container">
         <h2>Features</h2>
         <ul class="features-list">
-            <li class="technology-item">
+            <li>
+                <span class="rotate technology-item">technology-item</span>
                 <p>New technology</p>
             </li>
-            <li class="signal-item">
+            <li>
+                <span class="rotate signal-item">signal-item</span>
                 <p>Good signal</p>
             </li>
-            <li class="use-item">
+            <li>
+                <span class="rotate use-item">use item</span>
                 <p>Easy to use</p>
             </li>
-            <li class="visibility-item">
+            <li>
+                <span class="rotate visibility-item">visibility item</span>
                 <p>Visibility</p>
             </li>
         </ul>
@@ -149,12 +162,12 @@
     </div>
 
 </footer>
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/lib/bootstrap.min.js"></script>
+<!--<script src="js/lib/jquery-3.1.1.js"></script>-->
 <script src="js/main.js"></script>
+<!--<script src="js/lib/jquery.bxslider.js"></script>-->
+<!--<script src="js/slider.js"></script>-->
+
 </body>
 </html>

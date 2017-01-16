@@ -7,6 +7,13 @@
     color: gray;
     @include display-flex;
     @include justify-content(space-between);
+    p {
+      @include transition-duration(0.3s);
+      &:hover {
+        color: $red;
+      }
+    }
+
   }
 
   .flex-right {
@@ -36,11 +43,10 @@
 }
 .phone-icon {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  background: url("../img/phone-icon.png") 50% 50% no-repeat;
   margin-right: 10px;
-  text-indent: -9999px;
+}
+.fa-phone {
+  font-weight: bold;
 }
 .buy-btn {
   display: inline-block;
