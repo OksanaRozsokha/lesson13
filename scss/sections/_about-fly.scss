@@ -1,18 +1,13 @@
 .about-fly {
   @include display-flex;
-  //h2 {
-  //  max-width: 335px;
-  //}
 }
 .droid-bg {
   position: relative;
   width: 35%;
   background: url("../img/droid-bg.png") 0 50% no-repeat;
   background-size: cover;
-  padding: 35px 0;
+  padding: 270px 0;
   overflow: hidden;
-  @include display-flex;
-  @include justify-content(flex-end);
   }
 .content-wrap {
   position: absolute;
@@ -21,6 +16,7 @@
   z-index: 100;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  max-width: 250px;
 
   h2 {
     width: 285px;
@@ -30,19 +26,13 @@
     color: $grey;
   }
 }
-//.three-circles {
-//  display: inline-block;
-//  width: 245px;
-//  height: 495px;
-//  @include  small-bg("../img/circle-part.png");
-//  margin-left: 280px;
-//  text-indent: -9999px;
-//}
 .max-circle {
+  position: absolute;
+  top: 5%;
+  right: -50%;
   width: 490px;
   height: 490px;
   background: #f4f5f8;
-  margin-left: 280px;
   @include border-radius(50%);
   @include display-flex;
   @include justify-content(center);
@@ -70,36 +60,41 @@
 .road-bg {
   width: 65%;
   @include section-bg("../img/road-bg.png");
+  overflow: hidden;
   @include display-flex;
   @include align-items(stretch);
 }
 .title-wrap {
-  padding: 0 110px 0 90px;
+  width: 55%;
   background: rgba(0, 0, 0, .65);
   @include display-flex;
-  @include justify-content(center);
+  @include justify-content(flex-start);
+
   @include align-items(center);
   h2 {
     max-width: 360px;
+    margin-left: 55px;
     color: $white;
   }
 }
-.btn-wrap {
+.button-wrap {
   position: relative;
-  @include display-flex;
-  @include align-items(center);
-  &:after {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 175px;
-    background: $white;
-    position: absolute;
-    bottom: 0;
-    left: 58%;
-  }
+  text-align: center;
+  width: 45%;
   .general-btn {
-    margin-left: 40px;
+    margin-top: 55%;
     @include  rotate(90deg);
   }
+}
+.line {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 1px;
+  height: 175px;
+  background: $white;
+  text-indent: -9999px;
 }

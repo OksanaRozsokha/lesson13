@@ -1,11 +1,6 @@
 .vision-generation {
-  @include section-bg("../img/new-vision-bg.png");
-  background-color: #232323;
-  padding: 45px 0;
-  .container {
-    @include display-flex;
-    @include justify-content(flex-end);
-  }
+  width: 100%;
+  @include display-flex;
   h2 {
     margin-bottom: 50px;
     @include big-h2;
@@ -22,6 +17,16 @@
     }
   }
 }
-.flex-wrap {
-  max-width: 535px;
+.man-bg {
+  width: 40%;
+  background: url("../img/man-bg.png") center right no-repeat;
+  background-size: cover;
+  text-indent: -9999px;
 }
+.grey-bg {
+  width: 60%;
+  background: $dark-grey-bg url("../img/to-grey-bg.png") center right no-repeat;
+  background-size: contain;
+  padding: 85px 0 85px 50px;
+}
+

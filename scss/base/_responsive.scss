@@ -9,6 +9,11 @@
   .dron-intro {
     max-width: 470px;
   }
+  .max-circle {
+    top: 15%;
+    width: 350px;
+    height: 350px;
+  }
 }
 @media (max-width: 991px) {
   .intro {
@@ -16,7 +21,6 @@
       margin-top: 10%;
     }
   }
-
   h2 {
     font-size: 45px;
   }
@@ -29,13 +33,63 @@
   }
   .dron-intro {
     max-width: 400px;
-  }
+  }  
   .big-circle {
     padding: 120px;
+  }
+  .grey-bg {
+    h2 {
+      font-size: 60px;
+    }
+  }
+  .flying-generation {
+    h2 {
+      max-width: 475px;
+      font-size: 60px;
+    }
+  }
+  .start-journey {
+    h2 {
+      font-size: 60px;
+    }
+  }
+}
+@media (min-width: 851px)and(max-width: 991px) {
+  .content-wrap {
+    right: 1%;
+  }
+}
+@media (max-width: 850px) {
+  .about-fly {
+    @include flex-direction(column);
+  }
+  .droid-bg {
+    width: 100%;
+  }
+  .road-bg {
+    width: 100%;
+  }
+  .road-bg {
+    .title-wrap {
+      width: 70%;
+      @include justify-content(center);
+      padding: 200px  0  200px 10px;
+    }
+    h2 {
+      margin-left: 0;
+    }
+  }
+  .button-wrap {
+    .general-btn {
+      margin-top: 50%;
+    }
   }
 }
 
 @media (max-width: 767px) {
+  h2 {
+    font-size: 48px;
+  }
   .intro {
     height: auto;
     padding-bottom: 50px;
@@ -61,5 +115,78 @@
   }
   .dron-intro {
     max-width: 300px;
+  }
+  .droid-bg {
+    h2 {
+      width: auto;
+    }
+  }
+  .road-bg {
+    .general-btn {
+      padding: 20px 20px;
+      font-size: 13px;
+    }
+  }
+  .features-list {
+    @include flex-direction(column);
+    li {
+      margin: 0 0 10% 0;
+    }
+  }
+  .grey-bg {
+    h2 {
+      font-size: 48px;
+    }
+  }
+  .flying-generation {
+    padding: 100px 0 200px;
+    h2 {
+      font-size: 48px;
+    }
+    .dron-img {
+      top: 70%;
+      width: 60%;
+    }
+  }
+  .start-journey {
+    h2 {
+      font-size: 55px;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .man-bg {
+    display: none;
+  }
+  .grey-bg {
+    width: 100%;
+    padding-right: 25px;
+  }
+}
+@media (min-width: 560px) and (max-width: 850px) {
+  .max-circle {
+    right: -29%;
+    width: 490px;
+    height: 490px;
+  }
+
+
+}
+@media (max-width: 465px) {
+  .road-bg {
+    h2 {
+      font-size: 35px;
+    }
+  }
+  .title-wrap {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 465px) and (max-width: 850px) {
+  .max-circle {
+    top: 5%;
+    width: 490px;
+    height: 490px;
   }
 }

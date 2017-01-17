@@ -1,7 +1,9 @@
 .flying-generation {
   position: relative;
   overflow: hidden;
-  padding: 320px 0 230px;
+  padding: 200px 0 130px;
+  @include display-flex;
+  @include justify-content(spacebetween);
   h2 {
     max-width: 535px;
     margin-bottom: 50px;
@@ -18,17 +20,15 @@
     }
   }
 }
-.img-wrap {
+
+.dron-img {
+  display: block;
   position: absolute;
-  z-index: -100;
-  right: -10%;
+  right: -14%;
   top: 50%;
+  z-index: -100;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  max-width: 905px;
-  .dron-img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+  width: 55%;
+  height: auto;
 }

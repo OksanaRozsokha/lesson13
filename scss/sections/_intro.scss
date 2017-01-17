@@ -4,10 +4,20 @@
   background-size: 38% 122%;
   padding-top: 60px;
   & > .container {
+    position: relative;
     @include display-flex;
     @include justify-content(flex-start);
     @include align-items(center);
     margin-top: 5%;
+    .scroll-wrap {
+      position: absolute;
+      left: -3%;
+      bottom: 1%;
+    }
+    .scroll-down {
+      @include font-bold(18px);
+      @include rotate(90deg);
+    }
   }
 }
 .markers-list {

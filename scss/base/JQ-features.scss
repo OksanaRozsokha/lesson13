@@ -1,0 +1,43 @@
+.markers-list {
+  li {
+    @include transition-duration(0.3s);
+  }
+  .active {
+    background: $red;
+  }
+}
+.slider-list {
+  li {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+}
+.jq-tab {
+  p {
+    display: none;
+    max-width: 500px;
+    color: $white;
+  }
+}
+.flying-generation {
+  p {
+    color: $black;
+  }
+}
+.jq-tab  {
+  h2 {
+    margin-bottom: 15px;
+    transition: font-size .3s;
+  }
+}
+.jq-tab {
+  .jq-btn {
+    margin-top: 50px;
+  }
+}
+.active-title {
+  font-size: 35px !important;
+  transition: font-size .3s;
+}

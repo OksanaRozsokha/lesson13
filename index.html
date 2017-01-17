@@ -7,9 +7,8 @@
     <title>title</title>
     <!-- Bootstrap -->
     <link href="css/lib/bootstrap.min.css" rel="stylesheet">
-    <!--<link href="css/lib/jquery.bxslider.css" rel="stylesheet">-->
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
@@ -49,18 +48,35 @@
             <ul class="markers-list">
                 <li>marker</li>
                 <li>marker</li>
-                <li>marker</li>
+                <li class="active">marker</li>
                 <li>marker</li>
             </ul>
-            <div class="slider-text">
-                <h2>Phantom</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
-            </div>
+            <ul class="slider-list">
+                <li class="slider-text">
+                    <h2>R2-D2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
+                </li>
+                <li class="slider-text">
+                    <h2>BB-8</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
+                </li>
+                <li class="slider-text active">
+                    <h2>Phantom</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
+                </li>
+                <li class="slider-text">
+                    <h2>Droid</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
+                </li>
+            </ul>
         </div>
         <div class="wrap-circle">
             <div class="big-circle">
                 <img class="dron-intro" src="img/dron-photo.png" alt="">
             </div>
+        </div>
+        <div class="scroll-wrap">
+            <span class="scroll-down">Scroll Down</span>
         </div>
     </div>
 </section>
@@ -86,8 +102,9 @@
         <div class="title-wrap">
             <h2>Fly higher than before</h2>
         </div>
-        <div class="btn-wrap">
+        <div class="button-wrap">
             <button class="general-btn">View more</button>
+            <span class="line">line</span>
         </div>
     </div>
 </section>
@@ -124,12 +141,16 @@
 <!------------------VISION-GENERATION----------------------------->
 
 <section class="vision-generation">
-    <div class="container">
-        <div class="flex-wrap">
-            <h2>New <span class="red-text">generation</span>
-                of vision<span class="red-text">.</span></h2>
-            <button class="general-btn">View more</button>
-        </div>
+    <div class="man-bg">content</div>
+    <div class="grey-bg jq-tab">
+        <h2>New <span class="red-text">generation</span>
+            of vision<span class="red-text">.</span></h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat.
+        </p>
+        <button class="general-btn jq-btn">View more</button>
     </div>
 </section>
 
@@ -139,12 +160,17 @@
 
 <section class="flying-generation">
     <div class="container">
-        <h2>New <span class="red-text">generation</span>
-                of vision<span class="red-text">.</span></h2>
-        <button class="general-btn">View more</button>
-        <div class="img-wrap">
-            <img class="dron-img" src="img/dron-photo.png" alt="">
+        <div class="jq-tab">
+            <h2>New <span class="red-text">generation</span>
+                of flying<span class="red-text">.</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+            <button class="general-btn jq-btn">View more</button>
         </div>
+        <img class="dron-img" src="img/dron-photo.png" alt="">
     </div>
 </section>
 
@@ -154,9 +180,14 @@
 
 <section class="start-journey">
     <div class="container">
-        <div class="flex-content">
+        <div class="flex-content jq-tab">
             <h2>Start your journey.</h2>
-            <button class="general-btn">View more</button>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+            <button class="general-btn jq-btn">View more</button>
         </div>
     </div>
 </section>
@@ -176,8 +207,7 @@
 <script src="js/lib/bootstrap.min.js"></script>
 <!--<script src="js/lib/jquery-3.1.1.js"></script>-->
 <script src="js/main.js"></script>
-<!--<script src="js/lib/jquery.bxslider.js"></script>-->
-<!--<script src="js/slider.js"></script>-->
+
 
 </body>
 </html>
