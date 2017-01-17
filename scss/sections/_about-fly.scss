@@ -6,7 +6,7 @@
 }
 .droid-bg {
   position: relative;
-  max-width: 615px;
+  width: 35%;
   background: url("../img/droid-bg.png") 0 50% no-repeat;
   background-size: cover;
   padding: 35px 0;
@@ -68,7 +68,7 @@
   @include align-items(center);
 }
 .road-bg {
-  width: 100%;
+  width: 65%;
   @include section-bg("../img/road-bg.png");
   @include display-flex;
   @include align-items(stretch);

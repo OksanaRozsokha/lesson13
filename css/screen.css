@@ -354,7 +354,7 @@ h2 {
 
 .droid-bg {
   position: relative;
-  max-width: 615px;
+  width: 35%;
   background: url("../img/droid-bg.png") 0 50% no-repeat;
   background-size: cover;
   padding: 35px 0;
@@ -429,7 +429,7 @@ h2 {
 }
 
 .road-bg {
-  width: 100%;
+  width: 65%;
   background: url("../img/road-bg.png") 50% 0 no-repeat;
   background-size: cover;
   display: -webkit-flex;
