@@ -277,9 +277,74 @@ h2 {
 
 .intro {
   height: 100vh;
-  background: url("../img/intro-bg.png") 50% 0 no-repeat;
-  background-size: cover;
+  background: #eff2f6 url(../img/intro-part-bg.png) top right no-repeat;
+  background-size: 38% 122%;
   padding-top: 60px;
+}
+.intro > .container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.markers-list {
+  margin-right: 70px;
+}
+.markers-list li {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: #e1e1e1;
+  margin-bottom: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+
+.slider-wrap {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.slider-text {
+  max-width: 400px;
+  margin-right: 55px;
+}
+.slider-text h2 {
+  margin-bottom: 40px;
+}
+.slider-text p {
+  color: #92a1a5;
+  line-height: 30px;
+}
+
+.wrap-circle {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.big-circle {
+  position: relative;
+  padding: 200px;
+  background: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.dron-intro {
+  display: block;
+  max-width: 630px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .about-fly {
@@ -293,6 +358,7 @@ h2 {
   background: url("../img/droid-bg.png") 0 50% no-repeat;
   background-size: cover;
   padding: 35px 0;
+  overflow: hidden;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: flex-end;
@@ -315,13 +381,51 @@ h2 {
   color: #92a1a5;
 }
 
-.three-circles {
-  display: inline-block;
-  width: 245px;
-  height: 495px;
-  background: url("../img/circle-part.png") 50% 50% no-repeat;
+.max-circle {
+  width: 490px;
+  height: 490px;
+  background: #f4f5f8;
   margin-left: 280px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.middle-circle {
+  width: 80%;
+  height: 80%;
+  background: #eef1f5;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.min-circle {
+  width: 70%;
+  height: 70%;
+  background: #e8ecf1;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   text-indent: -9999px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .road-bg {
@@ -563,4 +667,84 @@ h2 {
 .small-link {
   color: #92a1a5;
   display: inline;
+}
+
+@media (max-width: 1199px) {
+  .slider-text {
+    max-width: 345px;
+    margin-right: 45px;
+  }
+
+  .big-circle {
+    padding: 150px;
+  }
+
+  .dron-intro {
+    max-width: 470px;
+  }
+}
+@media (max-width: 991px) {
+  .intro > .container {
+    margin-top: 10%;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  .markers-list {
+    margin-right: 35px;
+  }
+
+  .slider-text {
+    max-width: 245px;
+    margin-right: 75px;
+  }
+
+  .dron-intro {
+    max-width: 400px;
+  }
+
+  .big-circle {
+    padding: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .intro {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .intro > .container {
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .flex-left {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .flex-right {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+  }
+
+  .buy-btn {
+    -webkit-order: 1;
+    order: 1;
+    margin: 15px 0 0 0;
+  }
+
+  .big-circle {
+    padding: 100px;
+    margin-top: 25px;
+  }
+
+  .dron-intro {
+    max-width: 300px;
+  }
 }

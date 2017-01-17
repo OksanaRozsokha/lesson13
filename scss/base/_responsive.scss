@@ -1,0 +1,65 @@
+@media (max-width: 1199px) {
+  .slider-text {
+    max-width: 345px;
+    margin-right: 45px;
+  }
+  .big-circle {
+    padding: 150px;
+  }
+  .dron-intro {
+    max-width: 470px;
+  }
+}
+@media (max-width: 991px) {
+  .intro {
+    & > .container {
+      margin-top: 10%;
+    }
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+  .markers-list {
+    margin-right: 35px;
+  }
+  .slider-text {
+    max-width: 245px;
+    margin-right: 75px;
+  }
+  .dron-intro {
+    max-width: 400px;
+  }
+  .big-circle {
+    padding: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    height: auto;
+    padding-bottom: 50px;
+    & > .container {
+      @include justify-content(center);
+      @include flex-direction(column);
+    }
+  }
+  .flex-left {
+    @include flex-direction(column);
+  }
+  .flex-right {
+    @include flex-direction(column);
+    @include align-items(flex-end);
+  }
+  .buy-btn {
+    @include order(1);
+    margin: 15px 0 0 0;
+  }
+  .big-circle {
+    padding: 100px;
+    margin-top: 25px;
+  }
+  .dron-intro {
+    max-width: 300px;
+  }
+}

@@ -10,6 +10,7 @@
   background: url("../img/droid-bg.png") 0 50% no-repeat;
   background-size: cover;
   padding: 35px 0;
+  overflow: hidden;
   @include display-flex;
   @include justify-content(flex-end);
   }
@@ -29,13 +30,42 @@
     color: $grey;
   }
 }
-.three-circles {
-  display: inline-block;
-  width: 245px;
-  height: 495px;
-  @include  small-bg("../img/circle-part.png");
+//.three-circles {
+//  display: inline-block;
+//  width: 245px;
+//  height: 495px;
+//  @include  small-bg("../img/circle-part.png");
+//  margin-left: 280px;
+//  text-indent: -9999px;
+//}
+.max-circle {
+  width: 490px;
+  height: 490px;
+  background: #f4f5f8;
   margin-left: 280px;
+  @include border-radius(50%);
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+}
+.middle-circle {
+  width: 80%;
+  height: 80%;
+  background: #eef1f5;
+  @include border-radius(50%);
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+}
+.min-circle {
+  width: 70%;
+  height: 70%;
+  background: #e8ecf1;
+  @include border-radius(50%);
   text-indent: -9999px;
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
 }
 .road-bg {
   width: 100%;
