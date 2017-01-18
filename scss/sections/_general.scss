@@ -1,3 +1,9 @@
+html, body{
+  overflow-x: hidden;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   @include font-regular(14px);
   color: $black;
@@ -69,12 +75,14 @@ h2 {
     }
   }
 
-.scroll-wrap {
+
+
+.scroll-down {
   animation-name: floating;
   -webkit-animation-name: floating;
 
-  animation-duration: 1.5s;
-  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
 
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
@@ -82,24 +90,24 @@ h2 {
 
 @keyframes floating {
   0% {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
   50% {
-    transform: translateY(100%);
+    transform: translateX(30%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 }
 
 @-webkit-keyframes floating {
   0% {
-    -webkit-transform: translateY(0%);
+    -webkit-transform: translateX(0%);
   }
   50% {
-    -webkit-transform: translateY(100%);
+    -webkit-transform: translateX(30%);
   }
   100% {
-    -webkit-transform: translateY(0%);
+    -webkit-transform: translateX(0%);
   }
 }

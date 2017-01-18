@@ -66,6 +66,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "Montserrat-Bold";
   src: url("../fonts/montserrat/bold/Montserrat-Bold.ttf") format("truetype"), url("../fonts/montserrat/bold/Montserrat-Bold.otf") format("opentype");
 }
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   font-size: 14px;
   font-family: "Montserrat-Regular", sans-serif;
@@ -128,35 +134,35 @@ h2 {
     opacity: 0.7;
   }
 }
-.scroll-wrap {
+.scroll-down {
   animation-name: floating;
   -webkit-animation-name: floating;
-  animation-duration: 1.5s;
-  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.8s;
+  -webkit-animation-duration: 1.8s;
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes floating {
   0% {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
   50% {
-    transform: translateY(100%);
+    transform: translateX(30%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 }
 @-webkit-keyframes floating {
   0% {
-    -webkit-transform: translateY(0%);
+    -webkit-transform: translateX(0%);
   }
   50% {
-    -webkit-transform: translateY(100%);
+    -webkit-transform: translateX(30%);
   }
   100% {
-    -webkit-transform: translateY(0%);
+    -webkit-transform: translateX(0%);
   }
 }
 .flex-header {
@@ -267,6 +273,7 @@ h2 {
   -o-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  outline: none;
 }
 .general-btn:hover {
   background: rgba(0, 0, 0, 0.7);
@@ -291,14 +298,18 @@ h2 {
 }
 .intro > .container .scroll-wrap {
   position: absolute;
-  left: -3%;
-  bottom: 1%;
-}
-.intro > .container .scroll-down {
-  font-size: 18px;
-  font-family: "Montserrat-Bold", sans-serif;
+  left: -4%;
+  bottom: 5%;
+  width: 110px;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+.intro > .container .scroll-down {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  font-family: "Montserrat-Bold", sans-serif;
 }
 
 .markers-list {
@@ -469,6 +480,15 @@ h2 {
   text-align: center;
   width: 45%;
 }
+.button-wrap .hover-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  display: none;
+}
 .button-wrap .general-btn {
   margin-top: 55%;
   -webkit-transform: rotate(90deg);
@@ -480,8 +500,6 @@ h2 {
   position: absolute;
   bottom: 0;
   right: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
   width: 1px;
   height: 175px;
   background: #fff;
@@ -718,7 +736,7 @@ h2 {
 
 .jq-tab h2 {
   margin-bottom: 15px;
-  transition: font-size .3s;
+  transition: font-size .5s;
 }
 
 .jq-tab .jq-btn {
@@ -727,7 +745,7 @@ h2 {
 
 .active-title {
   font-size: 35px !important;
-  transition: font-size .3s;
+  transition: font-size .5s;
 }
 
 @media (max-width: 1199px) {

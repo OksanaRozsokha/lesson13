@@ -11,12 +11,18 @@
     margin-top: 5%;
     .scroll-wrap {
       position: absolute;
-      left: -3%;
-      bottom: 1%;
+      left: -4%;
+      bottom: 5%;
+      width: 110px;
+    @include rotate(90deg);
+
     }
     .scroll-down {
+      position: absolute;
+      left: 0;
+      bottom: 0;
       @include font-bold(18px);
-      @include rotate(90deg);
+
     }
   }
 }

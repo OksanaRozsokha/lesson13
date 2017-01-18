@@ -8,161 +8,200 @@
     <!-- Bootstrap -->
     <link href="css/lib/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/menu/pushy.css" />
     <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+
 
 </head>
 <body>
+
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left">
+    <ul>
+        <!-- Submenu -->
+        <li class="pushy-submenu">
+            <a href="#">Submenu</a>
+            <ul>
+                <li class="pushy-link"><a href="#">Item 1</a></li>
+                <li class="pushy-link"><a href="#">Item 2</a></li>
+                <li class="pushy-link"><a href="#">Item 3</a></li>
+            </ul>
+        </li>
+        <li class="pushy-link"><a href="#">Item 1</a></li>
+        <li class="pushy-link"><a href="#">Item 2</a></li>
+    </ul>
+</nav>
+
+<!-- Site Overlay -->
+<div class="site-overlay"></div>
+
+<!--  Content -->
+<div id="container">
 <!-----------------------INTRO-SECTION----------------->
 
-<section class="intro">
+    <section class="intro">
+        <!---------------------HEADER--------------------------->
+        <header class="main-header">
+            <div class="container">
+                <div class="flex-header">
+                    <div class="flex-left">
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="">
+                            <span class="small-circle">circle</span>
+                            <h1>Mars</h1>
+                        </a>
+                        <p><span class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>+48 604 300 500</p>
+                    </div>
+                    <div class="flex-right">
+                        <button class="buy-btn">
+                            <span class="text-btn">Buy now</span>
+                        </button>
 
-    <!---------------------HEADER--------------------------->
+                        <nav   class="header-nav">
+                            <button class="menu menu-btn">menu</button>
+                        </nav>
 
-    <header class="main-header">
+                        <!--<div class="header-nav">-->
+                            <!--<nav class="menu-list">-->
+                                <!--<div class="icon-list">-->
+                                    <!--<a href="#"><i class="fa fa-fw fa-star-o"></i><span>Angry Robots</span></a>-->
+                                    <!--<a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Kind robots</span></a>-->
+                                    <!--<a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Funny robots</span></a>-->
+                                    <!--<a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Real robots</span></a>-->
+                                    <!--<a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Dancing robots</span></a>-->
+                                    <!--<a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Normal robots</span></a>-->
+                                <!--</div>-->
+                            <!--</nav>-->
+                            <!--<button class="close-button" id="close-button">Close Menu</button>-->
+                            <!--<div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">-->
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">-->
+                                    <!--<path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>-->
+                                <!--</svg>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<button class="menu" id="open-button">Open Menu</button>-->
+
+                        <!--<nav class="st-menu st-effect-1" id="menu-1">-->
+                            <!--<h2 class="icon icon-lab">Sidebar</h2>-->
+                            <!--<ul>-->
+                                <!--<li><a class="icon icon-data" href="#">Data Management</a></li>-->
+                                <!--<li><a class="icon icon-location" href="#">Location</a></li>-->
+                                <!--<li><a class="icon icon-study" href="#">Study</a></li>-->
+                                <!--<li><a class="icon icon-photo" href="#">Collections</a></li>-->
+                                <!--<li><a class="icon icon-wallet" href="#">Credits</a></li>-->
+                            <!--</ul>-->
+                        <!--</nav>-->
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!---------------------END HEADER--------------------------->
+
         <div class="container">
-            <div class="flex-header">
-                <div class="flex-left">
-                    <a href="#" class="logo">
-                        <img src="img/logo.png" alt="">
-                        <span class="small-circle">circle</span>
-                        <h1>Mars</h1>
-                    </a>
-                    <p><span class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>+48 604 300 500</p>
+            <div class="slider-wrap">
+                <ul class="markers-list">
+                    <li>marker</li>
+                    <li>marker</li>
+                    <li class="active">marker</li>
+                    <li>marker</li>
+                </ul>
+                <ul class="slider-list">
+                    <li class="slider-text">
+                        <h2>R2-D2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
+                    </li>
+                    <li class="slider-text">
+                        <h2>BB-8</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
+                    </li>
+                    <li class="slider-text active">
+                        <h2>Phantom</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
+                    </li>
+                    <li class="slider-text">
+                        <h2>Droid</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrap-circle">
+                <div class="big-circle">
+                    <img class="dron-intro" src="img/dron-photo.png" alt="">
                 </div>
-                <div class="flex-right">
-                    <button class="buy-btn">
-                        <span class="text-btn">Buy now</span>
-                    </button>
-                    <nav class="header-nav">
-                        <button class="menu">menu</button>
-                    </nav>
+            </div>
+            <div class="scroll-wrap">
+                <span class="scroll-down">Scroll Down</span>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------END INTRO SECTION-------------------->
+
+    <!----------------------------ABOUT-FLY---------------------------->
+    <section class="about-fly">
+        <div class="droid-bg">
+            <div class="content-wrap">
+                <h2>Tap to fly</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <!--<span class="three-circles">circles</span>-->
+
+            <div class="max-circle ">
+                <div class="middle-circle">
+                    <div class="min-circle">circle</div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <!---------------------END HEADER--------------------------->
-
-    <div class="container">
-        <div class="slider-wrap">
-            <ul class="markers-list">
-                <li>marker</li>
-                <li>marker</li>
-                <li class="active">marker</li>
-                <li>marker</li>
-            </ul>
-            <ul class="slider-list">
-                <li class="slider-text">
-                    <h2>R2-D2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
-                </li>
-                <li class="slider-text">
-                    <h2>BB-8</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
-                </li>
-                <li class="slider-text active">
-                    <h2>Phantom</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
-                </li>
-                <li class="slider-text">
-                    <h2>Droid</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget euismod dolor.</p>
-                </li>
-            </ul>
-        </div>
-        <div class="wrap-circle">
-            <div class="big-circle">
-                <img class="dron-intro" src="img/dron-photo.png" alt="">
+        <div class="road-bg">
+            <div class="title-wrap" id="jq-block">
+                <h2>Fly higher than before</h2>
+            </div>
+            <div class="button-wrap">
+                <div class="hover-wrap" id="jq-hover">hover-wrap</div>
+                <button class="general-btn" id="hover-btn">View more</button>
+                <span class="line">line</span>
             </div>
         </div>
-        <div class="scroll-wrap">
-            <span class="scroll-down">Scroll Down</span>
+    </section>
+    <!--------------------END-ABOUt-FLY----------------------------------->
+
+    <!------------------FEATURES------------------------------------------>
+
+    <section class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <ul class="features-list">
+                <li>
+                    <span class="rotate technology-item">technology-item</span>
+                    <p>New technology</p>
+                </li>
+                <li>
+                    <span class="rotate signal-item">signal-item</span>
+                    <p>Good signal</p>
+                </li>
+                <li>
+                    <span class="rotate use-item">use item</span>
+                    <p>Easy to use</p>
+                </li>
+                <li>
+                    <span class="rotate visibility-item">visibility item</span>
+                    <p>Visibility</p>
+                </li>
+            </ul>
         </div>
-    </div>
-</section>
+    </section>
 
-<!----------------------------END INTRO SECTION-------------------->
+    <!---------------------------END-FEATURES------------------------------->
 
-<!----------------------------ABOUT-FLY---------------------------->
-<section class="about-fly">
-    <div class="droid-bg">
-        <div class="content-wrap">
-            <h2>Tap to fly</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <!--<span class="three-circles">circles</span>-->
+    <!------------------VISION-GENERATION----------------------------->
 
-        <div class="max-circle ">
-            <div class="middle-circle">
-                <div class="min-circle">circle</div>
-            </div>
-        </div>
-    </div>
-    <div class="road-bg">
-        <div class="title-wrap">
-            <h2>Fly higher than before</h2>
-        </div>
-        <div class="button-wrap">
-            <button class="general-btn">View more</button>
-            <span class="line">line</span>
-        </div>
-    </div>
-</section>
-<!--------------------END-ABOUt-FLY----------------------------------->
-
-<!------------------FEATURES------------------------------------------>
-
-<section class="features">
-    <div class="container">
-        <h2>Features</h2>
-        <ul class="features-list">
-            <li>
-                <span class="rotate technology-item">technology-item</span>
-                <p>New technology</p>
-            </li>
-            <li>
-                <span class="rotate signal-item">signal-item</span>
-                <p>Good signal</p>
-            </li>
-            <li>
-                <span class="rotate use-item">use item</span>
-                <p>Easy to use</p>
-            </li>
-            <li>
-                <span class="rotate visibility-item">visibility item</span>
-                <p>Visibility</p>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<!---------------------------END-FEATURES------------------------------->
-
-<!------------------VISION-GENERATION----------------------------->
-
-<section class="vision-generation">
-    <div class="man-bg">content</div>
-    <div class="grey-bg jq-tab">
-        <h2>New <span class="red-text">generation</span>
-            of vision<span class="red-text">.</span></h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat.
-        </p>
-        <button class="general-btn jq-btn">View more</button>
-    </div>
-</section>
-
-<!---------------------END-VISION-GENERATION------------------------>
-
-<!---------------------FLYING-GENERATION---------------------------->
-
-<section class="flying-generation">
-    <div class="container">
-        <div class="jq-tab">
+    <section class="vision-generation">
+        <div class="man-bg">content</div>
+        <div class="grey-bg jq-tab">
             <h2>New <span class="red-text">generation</span>
-                of flying<span class="red-text">.</span></h2>
+                of vision<span class="red-text">.</span></h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -170,41 +209,63 @@
             </p>
             <button class="general-btn jq-btn">View more</button>
         </div>
-        <img class="dron-img" src="img/dron-photo.png" alt="">
-    </div>
-</section>
+    </section>
 
-<!---------------------END-FLYING-GENERATION------------------------->
+    <!---------------------END-VISION-GENERATION------------------------>
 
-<!---------------------START-JOURNEY---------------------------------->
+    <!---------------------FLYING-GENERATION---------------------------->
 
-<section class="start-journey">
-    <div class="container">
-        <div class="flex-content jq-tab">
-            <h2>Start your journey.</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
-            </p>
-            <button class="general-btn jq-btn">View more</button>
+    <section class="flying-generation">
+        <div class="container">
+            <div class="jq-tab">
+                <h2>New <span class="red-text">generation</span>
+                    of flying<span class="red-text">.</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+                <button class="general-btn jq-btn">View more</button>
+            </div>
+            <img class="dron-img" src="img/dron-photo.png" alt="">
         </div>
-    </div>
-</section>
+    </section>
 
-<!----------------------END-START-JOURNEY------------------------------>
+    <!---------------------END-FLYING-GENERATION------------------------->
 
-<footer class="main-footer">
-    <div class="container">
-        <div class="flex-content">
-            <span class="logo">Mars<span class="small-circle">circle</span></span>
-            <p>2016 Copyright. All rights reserved by <a class="small-link" href="#">Symu.co</a></p>
+    <!---------------------START-JOURNEY---------------------------------->
+
+    <section class="start-journey">
+        <div class="container">
+            <div class="flex-content jq-tab">
+                <h2>Start your journey.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+                <button class="general-btn jq-btn">View more</button>
+            </div>
         </div>
-    </div>
+    </section>
 
-</footer>
+    <!----------------------END-START-JOURNEY------------------------------>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="flex-content">
+                <span class="logo">Mars<span class="small-circle">circle</span></span>
+                <p>2016 Copyright. All rights reserved by <a class="small-link" href="#">Symu.co</a></p>
+            </div>
+        </div>
+
+    </footer>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/menu/pushy.min.js"></script>
+
 <!--<script src="js/lib/jquery-3.1.1.js"></script>-->
 <script src="js/main.js"></script>
 
