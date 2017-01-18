@@ -1,3 +1,8 @@
+@media (min-width: 1200px) and (max-width: 1409px){
+  .scroll-wrap {
+    bottom: 18%;
+  }
+}
 @media (max-width: 1199px) {
   .slider-text {
     max-width: 345px;
@@ -91,8 +96,6 @@
     font-size: 48px;
   }
   .intro {
-    height: auto;
-    padding-bottom: 50px;
     & > .container {
       @include justify-content(center);
       @include flex-direction(column);
@@ -173,6 +176,21 @@
 
 }
 @media (max-width: 465px) {
+  .slider-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .big-circle {
+    padding: 95px;
+    margin-left: 45px;
+  }
+  .dron-intro {
+    max-width: 265px;
+  }
+  .scroll-wrap {
+    left: -11%;
+    bottom: 14%;
+  }
   .road-bg {
     h2 {
       font-size: 35px;
@@ -180,6 +198,11 @@
   }
   .title-wrap {
     padding-left: 0;
+  }
+}
+@media (min-width: 466px) and (max-width: 767px) {
+  .scroll-wrap {
+    bottom: 30%;
   }
 }
 
@@ -190,3 +213,40 @@
     height: 490px;
   }
 }
+
+//-------iPhone-4
+@media (max-height: 480px) {
+  .scroll-wrap {
+    left: -11%;
+    bottom: 26%;
+  }
+  .big-circle {
+    padding: 75px;
+    margin-top: 10px;
+  }
+}
+@media (min-height: 1048px) {
+  .intro {
+    & > .container {
+      margin-top: 20%;
+    }
+  }
+}
+@media only screen and  (max-device-width : 767px) and (orientation : landscape) {
+  .intro {
+    height: auto;
+    & > .container {
+      padding-bottom: 150px;
+    }
+  }
+  .scroll-wrap {
+    display: none;
+  }
+  .big-circle {
+    padding: 85px;
+    margin-top: 30px;
+    margin-left: 110px;
+  }
+}
+
+

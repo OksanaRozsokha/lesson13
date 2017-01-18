@@ -3,29 +3,30 @@
   background: $grey-bg url(../img/intro-part-bg.png) top right no-repeat;
   background-size: 38% 122%;
   padding-top: 60px;
+
   & > .container {
     position: relative;
     @include display-flex;
     @include justify-content(flex-start);
     @include align-items(center);
     margin-top: 5%;
-    .scroll-wrap {
-      position: absolute;
-      left: -4%;
-      bottom: 5%;
-      width: 110px;
-    @include rotate(90deg);
-
-    }
-    .scroll-down {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      @include font-bold(18px);
-
-    }
   }
 }
+
+.scroll-wrap {
+  position: absolute;
+  left: -4%;
+  bottom: 5%;
+  width: 110px;
+  @include rotate(90deg);
+}
+.scroll-down {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @include font-bold(18px);
+}
+
 .markers-list {
   margin-right: 70px;
   li {

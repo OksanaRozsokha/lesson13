@@ -7,7 +7,6 @@
   @include font-bold(18px);
   text-transform: uppercase;
   @include transition-duration(0.3s);
-  outline: none;
   &:hover {
     background: rgba(0, 0, 0, 0.7);
     color: $white;

@@ -88,6 +88,10 @@ h2 {
   color: #ff343d;
 }
 
+button {
+  outline: none;
+}
+
 .logo:hover .small-circle {
   animation-name: pulse;
   -webkit-animation-name: pulse;
@@ -273,7 +277,6 @@ h2 {
   -o-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  outline: none;
 }
 .general-btn:hover {
   background: rgba(0, 0, 0, 0.7);
@@ -296,7 +299,8 @@ h2 {
   align-items: center;
   margin-top: 5%;
 }
-.intro > .container .scroll-wrap {
+
+.scroll-wrap {
   position: absolute;
   left: -4%;
   bottom: 5%;
@@ -304,7 +308,8 @@ h2 {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.intro > .container .scroll-down {
+
+.scroll-down {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -748,6 +753,11 @@ h2 {
   transition: font-size .5s;
 }
 
+@media (min-width: 1200px) and (max-width: 1409px) {
+  .scroll-wrap {
+    bottom: 18%;
+  }
+}
 @media (max-width: 1199px) {
   .slider-text {
     max-width: 345px;
@@ -845,10 +855,6 @@ h2 {
     font-size: 48px;
   }
 
-  .intro {
-    height: auto;
-    padding-bottom: 50px;
-  }
   .intro > .container {
     -webkit-justify-content: center;
     justify-content: center;
@@ -937,6 +943,25 @@ h2 {
   }
 }
 @media (max-width: 465px) {
+  .slider-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .big-circle {
+    padding: 95px;
+    margin-left: 45px;
+  }
+
+  .dron-intro {
+    max-width: 265px;
+  }
+
+  .scroll-wrap {
+    left: -11%;
+    bottom: 14%;
+  }
+
   .road-bg h2 {
     font-size: 35px;
   }
@@ -945,10 +970,49 @@ h2 {
     padding-left: 0;
   }
 }
+@media (min-width: 466px) and (max-width: 767px) {
+  .scroll-wrap {
+    bottom: 30%;
+  }
+}
 @media (min-width: 465px) and (max-width: 850px) {
   .max-circle {
     top: 5%;
     width: 490px;
     height: 490px;
+  }
+}
+@media (max-height: 480px) {
+  .scroll-wrap {
+    left: -11%;
+    bottom: 26%;
+  }
+
+  .big-circle {
+    padding: 75px;
+    margin-top: 10px;
+  }
+}
+@media (min-height: 1048px) {
+  .intro > .container {
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+  .intro {
+    height: auto;
+  }
+  .intro > .container {
+    padding-bottom: 150px;
+  }
+
+  .scroll-wrap {
+    display: none;
+  }
+
+  .big-circle {
+    padding: 85px;
+    margin-top: 30px;
+    margin-left: 110px;
   }
 }
