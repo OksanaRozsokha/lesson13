@@ -27,16 +27,16 @@
   }
 }
 .jq-tab  {
+  height: 340px;
   h2 {
     margin-bottom: 15px;
     transition: font-size .5s;
   }
-}
-.jq-tab {
   .jq-btn {
     margin-top: 50px;
   }
 }
+
 .active-title {
   font-size: 35px !important;
   transition: font-size .5s;

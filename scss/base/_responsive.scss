@@ -1,3 +1,76 @@
+@media (min-width: 2000px) {
+  //--intro
+  .container {
+    width: 1575px;
+  }
+  .intro {
+    & > .container {
+      margin-top: 3%;
+    }
+  }
+  .big-circle {
+    padding: 326px;
+  }
+  .dron-intro {
+    max-width: 1035px;
+  }
+  .slider-text {
+    margin-right: 185px;
+  }
+
+  //-- about-fly
+
+  .droid-bg {
+    padding: 306px 0;
+  }
+  .max-circle {
+    right: -35%;
+  }
+  .title-wrap {
+    width: 45%;
+  }
+  .button-wrap {
+    .general-btn {
+      margin-top: 50%;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  }
+  //--features
+  .features-list li {
+    margin-left: 12%;
+  }
+  .jq-tab h2 {
+    font-size: 92px;
+  }
+  //--vision-generation
+  .grey-bg {
+    padding: 160px 0 55px 80px;
+    h2 {
+      max-width: 750px;
+    }
+  }
+  // --flying-generation
+  .flying-generation {
+    padding: 315px 0 250px;
+    h2 {
+      max-width: 750px;
+    }
+    .dron-img {
+      max-width: 908px;
+      right: -7%;
+    }
+  }
+  //--start journey
+  .start-journey {
+    padding: 790px 0 150px;
+  }
+  //--footer
+  .main-footer {
+    padding: 230px 0 235px;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1409px){
   .scroll-wrap {
     bottom: 18%;
@@ -100,7 +173,11 @@
       @include justify-content(center);
       @include flex-direction(column);
     }
+    .small-circle {
+      right: -4%;
+    }
   }
+
   .flex-left {
     @include flex-direction(column);
   }
@@ -158,6 +235,11 @@
   }
 }
 @media (max-width: 620px) {
+  .button-wrap {
+    .general-btn {
+      margin-top: 95%;
+    }
+  }
   .man-bg {
     display: none;
   }
@@ -165,6 +247,7 @@
     width: 100%;
     padding-right: 25px;
   }
+
 }
 @media (min-width: 560px) and (max-width: 850px) {
   .max-circle {

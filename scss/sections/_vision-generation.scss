@@ -3,7 +3,7 @@
   @include display-flex;
   h2 {
     margin-bottom: 50px;
-    @include big-h2;
+    @include font-regular(82px);
     color: $white;
   }
   .general-btn {

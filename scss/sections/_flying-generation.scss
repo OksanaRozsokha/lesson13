@@ -1,13 +1,13 @@
 .flying-generation {
   position: relative;
   overflow: hidden;
-  padding: 200px 0 130px;
+  padding: 300px 0 200px;
   @include display-flex;
   @include justify-content(spacebetween);
   h2 {
-    max-width: 535px;
+    max-width: 670px;
     margin-bottom: 50px;
-    @include big-h2;
+    @include font-regular(82px);
   }
   .general-btn {
     background: transparent;

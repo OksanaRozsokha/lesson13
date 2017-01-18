@@ -589,16 +589,16 @@ button {
 .flying-generation {
   position: relative;
   overflow: hidden;
-  padding: 200px 0 130px;
+  padding: 300px 0 200px;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: spacebetween;
   justify-content: spacebetween;
 }
 .flying-generation h2 {
-  max-width: 535px;
+  max-width: 670px;
   margin-bottom: 50px;
-  font-size: 92px;
+  font-size: 82px;
   font-family: "Montserrat-Regular", sans-serif;
 }
 .flying-generation .general-btn {
@@ -631,7 +631,7 @@ button {
 }
 .vision-generation h2 {
   margin-bottom: 50px;
-  font-size: 92px;
+  font-size: 82px;
   font-family: "Montserrat-Regular", sans-serif;
   color: #fff;
 }
@@ -663,7 +663,7 @@ button {
 .start-journey {
   background: url("../img/start-journey-bg.png") 50% 0 no-repeat;
   background-size: cover;
-  padding: 620px 0 205px;
+  padding: 520px 0 105px;
   text-align: center;
 }
 .start-journey .container {
@@ -685,7 +685,7 @@ button {
 .main-footer {
   background: url("../img/footer-bg.png") 50% 50% no-repeat;
   background-size: contain;
-  padding: 230px 0;
+  padding: 170px 0;
   text-align: center;
 }
 .main-footer .container {
@@ -739,11 +739,13 @@ button {
   color: #000;
 }
 
+.jq-tab {
+  height: 340px;
+}
 .jq-tab h2 {
   margin-bottom: 15px;
   transition: font-size .5s;
 }
-
 .jq-tab .jq-btn {
   margin-top: 50px;
 }
@@ -753,6 +755,79 @@ button {
   transition: font-size .5s;
 }
 
+@media (min-width: 2000px) {
+  .container {
+    width: 1575px;
+  }
+
+  .intro > .container {
+    margin-top: 3%;
+  }
+
+  .big-circle {
+    padding: 326px;
+  }
+
+  .dron-intro {
+    max-width: 1035px;
+  }
+
+  .slider-text {
+    margin-right: 185px;
+  }
+
+  .droid-bg {
+    padding: 306px 0;
+  }
+
+  .max-circle {
+    right: -35%;
+  }
+
+  .title-wrap {
+    width: 45%;
+  }
+
+  .button-wrap .general-btn {
+    margin-top: 50%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .features-list li {
+    margin-left: 12%;
+  }
+
+  .jq-tab h2 {
+    font-size: 92px;
+  }
+
+  .grey-bg {
+    padding: 160px 0 55px 80px;
+  }
+  .grey-bg h2 {
+    max-width: 750px;
+  }
+
+  .flying-generation {
+    padding: 315px 0 250px;
+  }
+  .flying-generation h2 {
+    max-width: 750px;
+  }
+  .flying-generation .dron-img {
+    max-width: 908px;
+    right: -7%;
+  }
+
+  .start-journey {
+    padding: 790px 0 150px;
+  }
+
+  .main-footer {
+    padding: 230px 0 235px;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1409px) {
   .scroll-wrap {
     bottom: 18%;
@@ -861,6 +936,9 @@ button {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
+  .intro .small-circle {
+    right: -4%;
+  }
 
   .flex-left {
     -webkit-flex-direction: column;
@@ -926,6 +1004,10 @@ button {
   }
 }
 @media (max-width: 620px) {
+  .button-wrap .general-btn {
+    margin-top: 95%;
+  }
+
   .man-bg {
     display: none;
   }
