@@ -1,0 +1,32 @@
+.vision-generation {
+  width: 100%;
+  @include display-flex;
+  h2 {
+    margin-bottom: 50px;
+    @include font-regular(82px);
+    color: $white;
+  }
+  .general-btn {
+    background: transparent;
+    border: 1px solid #3b3b3b;
+    color: $white;
+    &:hover {
+      background: $white;
+      border: 1px solid transparent;
+      color: $black;
+    }
+  }
+}
+.man-bg {
+  width: 40%;
+  background: url("../img/man-bg.png") center right no-repeat;
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grey-bg {
+  width: 60%;
+  background: $dark-grey-bg url("../img/to-grey-bg.png") center right no-repeat;
+  background-size: contain;
+  padding: 85px 0 85px 50px;
+}
+

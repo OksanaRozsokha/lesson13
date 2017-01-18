@@ -1,0 +1,107 @@
+.about-fly {
+  @include display-flex;
+}
+.droid-bg {
+  position: relative;
+  width: 35%;
+  background: url("../img/droid-bg.png") 0 50% no-repeat;
+  background-size: cover;
+  padding: 270px 0;
+  overflow: hidden;
+  }
+.content-wrap {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  z-index: 100;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 250px;
+
+  h2 {
+    width: 285px;
+    margin-bottom: 15px;
+  }
+  p {
+    color: $grey;
+  }
+}
+.max-circle {
+  position: absolute;
+  top: 5%;
+  right: -50%;
+  width: 490px;
+  height: 490px;
+  background: #f4f5f8;
+  @include border-radius(50%);
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+}
+.middle-circle {
+  width: 80%;
+  height: 80%;
+  background: #eef1f5;
+  @include border-radius(50%);
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+}
+.min-circle {
+  width: 70%;
+  height: 70%;
+  background: #e8ecf1;
+  @include border-radius(50%);
+  text-indent: -9999px;
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+}
+.road-bg {
+  width: 65%;
+  @include section-bg("../img/road-bg.png");
+  overflow: hidden;
+  @include display-flex;
+  @include align-items(stretch);
+}
+.title-wrap {
+  width: 55%;
+  background: rgba(0, 0, 0, .65);
+  @include display-flex;
+  @include justify-content(flex-start);
+
+  @include align-items(center);
+  h2 {
+    max-width: 360px;
+    margin-left: 55px;
+    color: $white;
+  }
+}
+.button-wrap {
+  position: relative;
+  text-align: center;
+  width: 45%;
+  .hover-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background: rgba(0, 0, 0, .65);
+    display: none;
+  }
+  .general-btn {
+    margin-top: 55%;
+    @include  rotate(90deg);
+  }
+}
+.line {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 1px;
+  height: 175px;
+  background: $white;
+  text-indent: -9999px;
+}

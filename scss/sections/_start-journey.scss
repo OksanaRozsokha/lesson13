@@ -1,0 +1,17 @@
+.start-journey {
+  @include  section-bg("../img/start-journey-bg.png");
+  padding: 520px 0 105px;
+  text-align: center;
+  .container {
+    @include display-flex;
+    @include justify-content(center);
+  }
+  h2 {
+    margin-bottom: 60px;
+    @include font-bold(92px);
+    color: $white;
+  }
+  .general-btn {
+    color: #318f76;
+  }
+}

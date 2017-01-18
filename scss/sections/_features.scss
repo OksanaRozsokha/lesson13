@@ -1,0 +1,59 @@
+.features {
+  padding:  130px 0 55px;
+  text-align: center;
+  h2 {
+    @include font-bold(48px);
+  }
+}
+.features-list {
+  margin-top: 125px;
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-wrap(wrap);
+  li {
+    margin: 0 0 7% 7%;
+    text-align: center;
+    &:nth-child(4n+1) {
+      margin-left: 0;
+    }
+  }
+  p {
+    @include  font-regular(30px);
+  }
+}
+.rotate {
+  @include transition-duration(0.5s);
+}
+.technology-item {
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  @include small-bg("../img/technology-icon.png");
+  margin-bottom: 70px;
+  text-indent: -9999px;
+}
+.signal-item {
+  display: inline-block;
+  width: 65px;
+  height: 95px;
+  @include small-bg("../img/signal-icon.png");
+  margin-bottom: 70px;
+  text-indent: -9999px;
+}
+.use-item {
+   display: inline-block;
+   width: 95px;
+   height: 95px;
+   @include small-bg("../img/easy-icon.png");
+   margin-bottom: 70px;
+   text-indent: -9999px;
+ }
+.visibility-item {
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  @include small-bg("../img/visibility-icon.png");
+  margin-bottom: 70px;
+  text-indent: -9999px;
+}

@@ -1,3 +1,73 @@
 .intro {
-  background: $blue;
+  height: 100vh;
+  background: $grey-bg url(../img/intro-part-bg.png) top right no-repeat;
+  background-size: 38% 122%;
+  padding-top: 60px;
+
+  & > .container {
+    position: relative;
+    @include display-flex;
+    @include justify-content(flex-start);
+    @include align-items(center);
+    margin-top: 5%;
+  }
+}
+
+.scroll-wrap {
+  position: absolute;
+  left: -4%;
+  bottom: 5%;
+  width: 110px;
+  @include rotate(90deg);
+}
+.scroll-down {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @include font-bold(18px);
+}
+
+.markers-list {
+  margin-right: 70px;
+  li {
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #e1e1e1;
+    margin-bottom: 20px;
+    @include border-radius(50%);
+    text-indent: -9999px;
+  }
+}
+.slider-wrap {
+  @include display-flex;
+}
+.slider-text {
+  max-width: 400px;
+  margin-right: 55px;
+  h2 {
+    margin-bottom: 40px;
+  }
+  p {
+    color: $grey;
+    line-height: 30px;
+  }
+}
+.wrap-circle {
+  @include display-flex;
+}
+.big-circle {
+  position: relative;
+  padding: 200px;
+  background: $white;
+  @include border-radius(50%);
+}
+.dron-intro {
+  display: block;
+  max-width: 630px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
