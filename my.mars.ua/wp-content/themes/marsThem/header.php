@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mars</title>
     <!-- Bootstrap -->
-<!--    <link href="css/lib/bootstrap.min.css" rel="stylesheet">-->
-<!--    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">-->
+    link href="<?php bloginfo('template_url')?>/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php bloginfo('template_url')?>/fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url')?>"/>
-
-
+    <script src="<?php bloginfo('template_url')?>/js/lib/jquery-3.1.1.js"></script>
+    <script src="<?php bloginfo('template_url')?>/js/lib/bootstrap.min.js"></script>
+    <script src="<?php bloginfo('template_url')?>/js/lib/menu/pushy.min.js"></script>
+    <script src="<?php bloginfo('template_url')?>/js/main.js"></script>
 
 </head>
 <body>
